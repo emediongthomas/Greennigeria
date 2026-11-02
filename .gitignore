@@ -1,0 +1,20 @@
+# Local sandbox data
+data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

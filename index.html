@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#103e2b" />
+    <meta
+      name="description"
+      content="Green Nigeria — a friendlier way to manage everyday money."
+    />
+    <title>Green Nigeria — Money, made human</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="Green Nigeria home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M25.6 6.4C15.2 6.4 8 10.1 8 18.1c0 3.4 2.4 5.7 5.4 5.7 7.6 0 12.2-8.5 12.2-17.4Z" fill="currentColor"/>
+              <path d="M7 25.7c2.4-5.3 6.7-9.4 13.2-12.4" stroke="#103E2B" stroke-width="2.1" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>green<span class="brand-light">nigeria</span></span>
+        </a>
+
+        <div class="workspace-label">YOUR SPACE</div>
+        <nav class="nav-list">
+          <button class="nav-item active" data-view="home">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.7"/></svg>
+            <span>Overview</span>
+          </button>
+          <button class="nav-item" data-view="transfer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h12m0 0-4-4m4 4-4 4M17 17H5m0 0 4 4m-4-4 4-4"/></svg>
+            <span>Transfers</span>
+          </button>
+          <button class="nav-item" data-view="activity">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-7"/></svg>
+            <span>Activity</span>
+          </button>
+          <button class="nav-item" data-view="assistant">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v2m0 13v2m8.5-8.5h-2m-13 0h-2m14.51-6.01-1.42 1.42M7.41 16.59l-1.42 1.42m12.02 0-1.42-1.42M7.41 7.41 5.99 5.99"/><circle cx="12" cy="12" r="5.5"/></svg>
+            <span>AI assistant</span>
+            <span class="nav-new">NEW</span>
+          </button>
+        </nav>
+
+        <div class="workspace-label tools-label">TOOLS</div>
+        <nav class="nav-list">
+          <button class="nav-item" data-view="scan">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3m8 0h3a1 1 0 0 1 1 1v3m0 8v3a1 1 0 0 1-1 1h-3m-8 0H5a1 1 0 0 1-1-1v-3"/><path d="M7 12h10M9 9h6v6H9z"/></svg>
+            <span>Scan account</span>
+          </button>
+          <button class="nav-item" data-view="profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.7-3.3 3.1-5 7-5s6.3 1.7 7 5"/></svg>
+            <span>My profile</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-spark">✳</span>
+            <strong>Money should feel simple.</strong>
+            <p>Need a hand? Your assistant is always around.</p>
+            <button data-view="assistant">Chat with AI <span>↗</span></button>
+          </div>
+          <div class="side-user">
+            <div class="avatar avatar-small" id="sidebarAvatar">A</div>
+            <div class="user-meta"><strong id="sidebarName">Ada Okafor</strong><span>Personal account</span></div>
+            <button class="icon-button side-menu" aria-label="Open profile" data-view="profile">···</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="mobile-brand">
+            <span class="brand-mark"><svg viewBox="0 0 32 32" fill="none"><path d="M25.6 6.4C15.2 6.4 8 10.1 8 18.1c0 3.4 2.4 5.7 5.4 5.7 7.6 0 12.2-8.5 12.2-17.4Z" fill="currentColor"/><path d="M7 25.7c2.4-5.3 6.7-9.4 13.2-12.4" stroke="#103E2B" stroke-width="2.1" stroke-linecap="round"/></svg></span>
+            <span>green<span class="brand-light">nigeria</span></span>
+          </div>
+          <div class="breadcrumb"><span>My space</span><span class="crumb-slash">/</span><strong id="pageCrumb">Overview</strong></div>
+          <div class="topbar-actions">
+            <span class="demo-pill"><span class="demo-dot"></span><span>SANDBOX · NO REAL MONEY</span><strong id="sandboxConnection" aria-live="polite">API CONNECTING</strong></span>
+            <button class="icon-button notification-button" aria-label="Notifications">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg><i></i>
+            </button>
+            <button class="top-avatar avatar" id="topAvatar" data-view="profile" aria-label="Open profile">A</button>
+          </div>
+        </header>
+
+        <div class="content-wrap">
+          <section class="view active" id="view-home">
+            <div class="welcome-row">
+              <div>
+                <p class="eyebrow" id="todayLabel">MONDAY, 2 NOVEMBER 2026</p>
+                <h1>Good afternoon, <span id="welcomeName">Ada</span> <span class="wave">✳</span></h1>
+                <p class="welcome-subtitle">A little clarity goes a long way. Here’s your money at a glance.</p>
+              </div>
+              <button class="button button-dark" data-view="transfer"><span class="button-plus">＋</span> Make a transfer</button>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="balance-card">
+                <div class="balance-top"><span class="balance-label">TOTAL BALANCE</span><button class="balance-menu" aria-label="More balance options">···</button></div>
+                <div class="balance-amount" id="balanceAmount">₦ 2,450,780<span>.50</span></div>
+                <div class="balance-foot"><span class="balance-account"><span class="live-dot"></span> Personal account <span class="account-dots">•••• 2841</span></span><button class="balance-eye" id="toggleBalance" aria-label="Hide balance">◉</button></div>
+                <div class="balance-decoration decoration-one"></div><div class="balance-decoration decoration-two"></div>
+              </article>
+              <article class="insight-card">
+                <div class="insight-head"><span class="insight-icon">✳</span><span class="ai-label">A NOTE FROM YOUR AI</span><span class="sparkle">✧</span></div>
+                <p class="insight-message">You’re doing great, Ada. You spent <strong>12% less</strong> on food this week. Keep it up! 🌱</p>
+                <button class="text-link" data-view="assistant">See your money insights <span>↗</span></button>
+                <div class="insight-leaf">✳</div>
+              </article>
+            </div>
+
+            <div class="quick-actions">
+              <button class="quick-action" data-view="transfer"><span class="quick-icon transfer-icon"><svg viewBox="0 0 24 24"><path d="M7 7h12m0 0-4-4m4 4-4 4M17 17H5m0 0 4 4m-4-4 4-4"/></svg></span><span>Send money</span></button>
+              <button class="quick-action" data-view="scan"><span class="quick-icon scan-icon"><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3m8 0h3a1 1 0 0 1 1 1v3m0 8v3a1 1 0 0 1-1 1h-3m-8 0H5a1 1 0 0 1-1-1v-3"/><path d="M7 12h10"/></svg></span><span>Scan an account</span></button>
+              <button class="quick-action" data-view="assistant"><span class="quick-icon chat-icon"><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.6 8.6 0 0 1-3.5-.7L4 20l1.2-3.4A7.2 7.2 0 0 1 4 12C4 7.9 7.6 5 12 5s8 2.9 8 6.5Z"/><path d="M8.5 12h.01m3.49 0h.01m3.49 0h.01"/></svg></span><span>Ask your AI</span></button>
+            </div>
+
+            <div class="section-heading transaction-heading"><div><h2>Recent activity</h2><p>Your money, moving with you.</p></div><button class="text-link" data-view="activity">View all activity <span>→</span></button></div>
+            <div class="activity-card">
+              <div class="activity-date"><span>TODAY</span><span id="todayTransactionCount">2 transactions</span></div>
+              <div class="transaction-list" id="recentTransactions"></div>
+            </div>
+
+            <div class="bottom-grid">
+              <article class="spending-card">
+                <div class="section-heading compact"><div><h2>Spending this week</h2><p>You’re right on track.</p></div><button class="period-button">This week <span>⌄</span></button></div>
+                <div class="spending-total">₦ 184,500 <span class="spending-change">↓ 12.4%</span></div>
+                <div class="chart" aria-label="Weekly spending chart">
+                  <div class="chart-guides"><span>100k</span><span>75k</span><span>50k</span><span>25k</span><span>0</span></div>
+                  <div class="chart-bars"><div class="bar-wrap"><div class="bar" style="--height:42%"></div><span>Mon</span></div><div class="bar-wrap"><div class="bar" style="--height:63%"></div><span>Tue</span></div><div class="bar-wrap"><div class="bar" style="--height:49%"></div><span>Wed</span></div><div class="bar-wrap"><div class="bar" style="--height:75%"></div><span>Thu</span></div><div class="bar-wrap"><div class="bar today-bar" style="--height:58%"></div><span>Fri</span></div><div class="bar-wrap"><div class="bar" style="--height:33%"></div><span>Sat</span></div><div class="bar-wrap"><div class="bar" style="--height:22%"></div><span>Sun</span></div></div>
+                </div>
+              </article>
+              <article class="people-card">
+                <div class="section-heading compact"><div><h2>Your people</h2><p>Good people, one tap away.</p></div><button class="icon-button add-person" aria-label="Add a person">＋</button></div>
+                <div class="people-list">
+                  <button class="person" data-person="Mama"><span class="person-avatar person-peach">M</span><span class="person-name">Mama</span></button>
+                  <button class="person" data-person="Tunde"><span class="person-avatar person-blue">T</span><span class="person-name">Tunde</span></button>
+                  <button class="person" data-person="Zainab"><span class="person-avatar person-lilac">Z</span><span class="person-name">Zainab</span></button>
+                  <button class="person" data-person="Emeka"><span class="person-avatar person-yellow">E</span><span class="person-name">Emeka</span></button>
+                  <button class="person" id="allPeople"><span class="person-avatar person-more">↗</span><span class="person-name">All people</span></button>
+                </div>
+                <button class="people-send" data-view="transfer">Send to someone new <span>→</span></button>
+              </article>
+            </div>
+            <p class="prototype-note">Sandbox only · Sample balance and activity are not bank data. No real money is moved.</p>
+          </section>
+
+          <section class="view" id="view-transfer">
+            <div class="page-intro"><p class="eyebrow">SEND WITH CONFIDENCE</p><h1>Make a transfer <span class="wave">↗</span></h1><p class="welcome-subtitle">A few details, and you’re all set.</p></div>
+            <div class="transfer-layout">
+              <div class="form-card">
+                <div class="form-title"><span class="step-number">01</span><div><h2>Who are you sending to?</h2><p>Choose a saved person or enter their bank details.</p></div></div>
+                <label class="field-label" for="recipientName">Recipient name</label>
+                <input class="text-input" id="recipientName" placeholder="e.g. Chidi Okonkwo" autocomplete="name" />
+                <div class="form-row">
+                  <div class="field-group"><label class="field-label" for="bankName">Bank</label><select class="text-input" id="bankName"><option value="">Select a bank</option><option>Access Bank</option><option>First Bank of Nigeria</option><option>Guaranty Trust Bank</option><option>United Bank for Africa</option><option>Zenith Bank</option><option>Opay</option><option>Moniepoint</option><option>Other Nigerian bank</option></select></div>
+                  <div class="field-group"><label class="field-label" for="accountNumber">Account number</label><div class="input-with-action"><input class="text-input" id="accountNumber" placeholder="10-digit number" inputmode="numeric" maxlength="10" /><button class="scan-inline" data-view="scan" aria-label="Scan account number">▣</button></div></div>
+                </div>
+                <div class="field-group"><label class="field-label" for="transferAmount">Amount</label><div class="amount-input"><span>₦</span><input id="transferAmount" class="text-input" placeholder="0.00" inputmode="decimal" /></div></div>
+                <div class="field-group"><label class="field-label" for="transferNote">What’s it for? <span class="optional">(optional)</span></label><input class="text-input" id="transferNote" placeholder="Add a note, e.g. Lunch money" maxlength="60" /></div>
+                <button class="button button-dark button-wide" id="reviewTransfer">Review transfer <span>→</span></button>
+                <p class="secure-note"><span>♢</span> Sandbox only. Do not enter real customer or bank details.</p>
+              </div>
+              <aside class="transfer-side">
+                <div class="transfer-tip"><span class="tip-icon">✳</span><span class="ai-label">GREEN AI TIP</span><h3>Double-check before you send.</h3><p>Make sure the account name and number match your recipient. Bank transfers can be difficult to reverse.</p><button class="text-link" data-view="assistant">Ask me anything <span>↗</span></button></div>
+                <div class="mini-balance"><span>AVAILABLE BALANCE</span><strong>₦ 2,450,780.50</strong><span>Personal account · •••• 2841</span></div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="view" id="view-activity">
+            <div class="page-intro activity-intro"><div><p class="eyebrow">YOUR MONEY, IN MOTION</p><h1>Activity <span class="wave">↗</span></h1><p class="welcome-subtitle">Every little thing, all in one place.</p></div><button class="button button-outline" id="downloadActivity">↓ <span>Download statement</span></button></div>
+            <div class="activity-summary"><div><span>SAMPLE ACTIVITY</span><strong id="monthlyCount">0 transactions</strong></div><div><span>SAMPLE MONEY IN</span><strong class="summary-in">₦ 350,000</strong></div><div><span>SAMPLE MONEY OUT</span><strong>₦ 184,500</strong></div></div>
+            <div class="activity-card full-activity"><div class="activity-date"><span>RECENT TRANSACTIONS</span><span id="allTransactionCount"></span></div><div class="transaction-list" id="allTransactions"></div></div>
+            <p class="prototype-note">Sandbox only · Activity is saved on this device and is not a bank statement.</p>
+          </section>
+
+          <section class="view" id="view-scan">
+            <div class="page-intro"><p class="eyebrow">A QUICKER WAY TO PAY</p><h1>Scan an account <span class="wave">▣</span></h1><p class="welcome-subtitle">Take a photo or upload a bank detail to fill in the account number.</p></div>
+            <div class="scan-layout">
+              <div class="scan-card">
+                <div class="scan-dropzone" id="scanDropzone">
+                  <div class="scan-visual"><span class="scan-corner corner-tl"></span><span class="scan-corner corner-tr"></span><span class="scan-corner corner-bl"></span><span class="scan-corner corner-br"></span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="11" width="36" height="42" rx="5"/><path d="M22 22h20M22 30h20M22 38h11"/></svg></div>
+                  <h2>Snap or upload a bank detail</h2><p>We’ll look for a 10-digit account number in the image. Your photo stays on this device.</p>
+                  <div class="scan-actions"><button class="button button-dark" id="takePhoto">Take a photo</button><button class="button button-outline" id="uploadPhoto">Upload image</button></div>
+                  <input id="scanFile" type="file" accept="image/*" capture="environment" hidden />
+                </div>
+                <div class="scan-preview" id="scanPreview" hidden><img id="previewImage" alt="Selected bank-detail image preview" /><div class="scan-status"><span class="spinner" id="scanSpinner"></span><span id="scanMessage">Preparing image…</span></div><button class="text-link scan-again" id="scanAgain">Choose a different image</button></div>
+              </div>
+              <aside class="scan-info"><div class="tip-icon">✳</div><h3>One less thing to type.</h3><p>We use on-device text recognition to find account numbers in your image. Always check the number and recipient name before you transfer.</p><div class="privacy-note"><span>♢</span><div><strong>Your privacy matters</strong><p>Images are processed in your browser and are not saved to Green Nigeria.</p></div></div><div class="manual-number"><label class="field-label" for="manualAccount">Or enter account number</label><input class="text-input" id="manualAccount" placeholder="10-digit account number" inputmode="numeric" maxlength="10" /><button class="button button-dark button-wide" id="useManualAccount">Use this account number</button></div></aside>
+            </div>
+            <p class="prototype-note">OCR requires an internet connection to load the text-recognition engine. Do not upload sensitive documents in this demo.</p>
+          </section>
+
+          <section class="view" id="view-assistant">
+            <div class="page-intro"><p class="eyebrow">HERE FOR THE LITTLE THINGS</p><h1>Your money sidekick <span class="wave">✳</span></h1><p class="welcome-subtitle">Ask a question, get a clear answer. No finance degree needed.</p></div>
+            <div class="chat-layout">
+              <div class="chat-card">
+                <div class="chat-header"><div class="assistant-avatar">✳</div><div><strong>Green AI</strong><span><i></i> Ready to help</span></div><span class="chat-prototype">DEMO ASSISTANT</span></div>
+                <div class="chat-messages" id="chatMessages"><div class="message assistant-message"><span class="message-avatar">✳</span><div><p>Hi Ada! I’m your Green Nigeria money sidekick. What can I help you with today?</p><span class="message-time">Just now</span></div></div><div class="suggestion-row"><button class="suggestion" data-prompt="How much have I spent this week?">My weekly spending</button><button class="suggestion" data-prompt="Help me make a transfer">Help with a transfer</button><button class="suggestion" data-prompt="How do I scan an account?">Scan an account</button></div></div>
+                <form class="chat-input-row" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Ask me anything about your money…" aria-label="Message Green AI" /><button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24"><path d="m4 4 17 8-17 8 3-8-3-8Zm3 8h14"/></svg></button></form>
+              </div>
+              <aside class="chat-side"><div class="chat-side-icon">✧</div><h3>Helpful, not judgmental.</h3><p>Ask about your spending, get help with the app, or find the right next step.</p><div class="chat-boundary">This demo assistant uses sample information. It can’t access your real bank account or make payments.</div></aside>
+            </div>
+          </section>
+
+          <section class="view" id="view-profile">
+            <div class="page-intro"><p class="eyebrow">MAKE IT YOURS</p><h1>Your profile <span class="wave">✳</span></h1><p class="welcome-subtitle">A familiar face makes your money space feel like home.</p></div>
+            <div class="profile-card">
+              <div class="profile-photo-wrap"><div class="profile-photo avatar" id="profileAvatar">A</div><label class="photo-edit" for="profilePhotoInput" aria-label="Change profile photo">✎</label><input id="profilePhotoInput" type="file" accept="image/*" hidden /></div>
+              <div class="profile-copy"><h2 id="profileDisplayName">Ada Okafor</h2><p>Personal account · Member since 2024</p><label for="profilePhotoInput" class="photo-link">Upload a profile photo <span>↗</span></label><span class="profile-hint">JPG or PNG · Stored on this device</span></div>
+            </div>
+            <div class="profile-details"><div><span>FULL NAME</span><strong id="profileFullName">Ada Okafor</strong></div><div><span>EMAIL ADDRESS</span><strong>ada.okafor@example.com</strong></div><div><span>PHONE NUMBER</span><strong>+234 803 000 2841</strong></div><button class="button button-outline" id="editProfile">Edit display name</button></div>
+            <p class="prototype-note">Demo profile details are sample data and are not connected to a bank.</p>
+          </section>
+        </div>
+        <footer class="footer"><span>© 2026 Green Nigeria</span><span>Made for everyday life in Nigeria <span class="footer-heart">♥</span></span></footer>
+      </main>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <button class="mobile-tab active" data-view="home" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.7"/></svg><span>Home</span></button>
+        <button class="mobile-tab" data-view="transfer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h12m0 0-4-4m4 4-4 4M17 17H5m0 0 4 4m-4-4 4-4"/></svg><span>Transfer</span></button>
+        <button class="mobile-tab" data-view="activity"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-7"/></svg><span>Activity</span></button>
+        <button class="mobile-tab" data-view="assistant"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v2m0 13v2m8.5-8.5h-2m-13 0h-2m14.51-6.01-1.42 1.42M7.41 16.59l-1.42 1.42m12.02 0-1.42-1.42M7.41 7.41 5.99 5.99"/><circle cx="12" cy="12" r="5.5"/></svg><span>Assistant</span></button>
+        <button class="mobile-tab" data-view="scan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3m8 0h3a1 1 0 0 1 1 1v3m0 8v3a1 1 0 0 1-1 1h-3m-8 0H5a1 1 0 0 1-1-1v-3"/></svg><span>Scan</span></button>
+        <button class="mobile-tab" data-view="profile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.7-3.3 3.1-5 7-5s6.3 1.7 7 5"/></svg><span>Profile</span></button>
+      </nav>
+    </div>
+
+    <div class="modal-backdrop" id="confirmModal" hidden>
+      <section class="confirm-modal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+      <button class="modal-close icon-button" id="closeModal" aria-label="Close">×</button><div class="modal-icon">↗</div><p class="eyebrow">SANDBOX SIMULATION</p><h2 id="confirmTitle">Review simulated transfer</h2><p class="modal-warning">This only creates a local test record. No bank is contacted and no money moves.</p>
+        <div class="review-details"><div><span>TO</span><strong id="reviewName"></strong></div><div><span>BANK</span><strong id="reviewBank"></strong></div><div><span>ACCOUNT NUMBER</span><strong id="reviewAccount"></strong></div><div><span>NOTE</span><strong id="reviewNote"></strong></div><div class="review-amount"><span>AMOUNT</span><strong id="reviewAmount"></strong></div></div>
+        <button class="button button-dark button-wide" id="confirmTransfer">Record simulated transfer</button><button class="text-link modal-back" id="editTransfer">Go back and edit</button>
+      </section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
